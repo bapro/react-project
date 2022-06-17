@@ -1,0 +1,30 @@
+
+import { useState, useEffect, useRef } from 'react';
+
+function UseRefHook() {
+	const [name, setName] = useState("");
+	const renderCount = useRef(1);
+	
+useEffect( () => {
+renderCount.current = 	renderCount.current + 1;
+});
+	
+	
+return(
+<>
+<input 
+	type="text"
+	value={name}
+	onChange={ (e) => setName(e.target.value)}
+	/>
+	<div>
+	<p>I my name is {name} </p>
+	<p>I render {renderCount.current} times</p>
+	</div>
+</>
+
+)	
+	
+}
+
+export default UseRefHook;

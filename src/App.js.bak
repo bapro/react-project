@@ -46,7 +46,7 @@ function App() {
 		 <Route path="/my-contacts" element={<ContactIndex />} />
 		 <Route path="/add-contact" element={<ContactCard />} />
 		  <Route path="/add-contact" element={<AddContact />} />
-		
+		  /*  <Route path="/get-users-with-hoc" element={<GetUserByHoc />} />*/
 		  <Route path="/react-hooks" element={<ReactHooks />} />
 		  <Route path="/search-box" element={<SearchBox />} />
         </Routes>
